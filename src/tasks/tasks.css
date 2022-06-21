@@ -1,0 +1,46 @@
+.zadania_list {
+  display: grid;
+  grid-template-columns: 18% 70% 12%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 2px;
+  padding: 0px;
+  margin: 0;
+  max-width: 100%;
+}
+.lista_fieldset {
+  margin-top: 7%;
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 5px;
+}
+@media (max-width: 700px) {
+  .zadania_list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+    grid-template-rows: auto;
+  }
+  .lista_fieldset {
+    max-height: 400px;
+  }
+  .zadania_legend {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .lista_fieldset {
+    max-height: 400px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .zadania_legend {
+    font-size: 18px;
+  }
+}
