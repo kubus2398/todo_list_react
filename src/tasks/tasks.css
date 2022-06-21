@@ -44,3 +44,6 @@
     font-size: 18px;
   }
 }
+.taskDone {
+  text-decoration: line-through;
+}

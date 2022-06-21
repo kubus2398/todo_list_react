@@ -1,4 +1,5 @@
 import "./tasks.css";
+import Button from "../buttons/index.js";
 
 const Tasks = (props) => (
   <fieldset className="lista_fieldset">
@@ -8,19 +9,18 @@ const Tasks = (props) => (
         <>
           <label className="zadania_label">
             <li className="zadania_item zadania_item--button">
-              <button className="zadania_done">Zrobione</button>
+              <Button classes="zadania_done" buttonContent="Zrobione" />
             </li>
           </label>
           <li
-            className={`"zadania_item" ${
-              task.done ? 'style="text-decoration: line-through"' : ""
-            }`}
+            className={`zadania_item" `}
+            style={task.done ? { "text-decoration": "line-through" } : {}}
           >
-            ${task.content}
+            {task.content}
           </li>
           <label className="zadania_label">
             <li className="zadania_item zadania_item--delete">
-              <button className="zadania_delete">Usuń</button>
+              <Button classes="zadania_delete" buttonContent="Usuń" />
             </li>
           </label>
         </>
