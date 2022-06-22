@@ -1,4 +1,3 @@
-import "./zadania.css";
 import "./navBar.css";
 import Form from "./form/index.js";
 import Tasks from "./tasks/index.js";
