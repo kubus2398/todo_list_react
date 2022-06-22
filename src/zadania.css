@@ -14,22 +14,6 @@
   width: 0.5rem;
 }
 
-.zadania_item {
-  display: flex;
-  flex-grow: 1;
-  list-style-type: none;
-  padding: 10px;
-  /* background-color: rgb(9, 163, 163); */
-  width: 100%;
-  justify-content: space-around;
-  border: 1px black solid;
-  border-radius: 5px;
-  height: 100%;
-  max-width: 100%;
-  word-break: break-all;
-  overflow: hidden;
-}
-
 .zadania_label {
   width: 100%;
   height: 100%;

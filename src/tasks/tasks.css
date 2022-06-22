@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(29, 196, 98), #c01a30);
+  border-radius: 100vw;
+  width: 0.5rem;
+}
 .zadania_list {
   display: grid;
   grid-template-columns: 18% 70% 12%;
@@ -46,4 +61,19 @@
 }
 .taskDone {
   text-decoration: line-through;
+}
+.zadania_item {
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  padding: 10px;
+  /* background-color: rgb(9, 163, 163); */
+  width: 100%;
+  justify-content: space-around;
+  border: 1px black solid;
+  border-radius: 5px;
+  height: 100%;
+  max-width: 100%;
+  word-break: break-all;
+  overflow: hidden;
 }
