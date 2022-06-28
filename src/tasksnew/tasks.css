@@ -53,6 +53,7 @@
     width: 50%;
   }
   .zadaniaText {
+    order: 3;
     padding: 10px;
     width: 100%;
   }
@@ -67,8 +68,9 @@ hr {
   width: 100%;
 }
 
-@media (max-width: 700px) {
-  .zadaniaText {
-    order: 3;
-  }
+.zadaniaText {
+  word-break: break-all;
+  white-space: normal;
+  padding-right: 10px;
+  padding-left: 10px;
 }
