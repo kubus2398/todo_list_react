@@ -1,10 +1,14 @@
 import "./navBar.css";
 import Form from "./form/index.js";
-import Tasks from "./tasks/index.js";
+import { Tasks } from "./tasksnew/index.js";
 import { NavTab } from "./nav/index.js";
 
 const tasks = [
-  { id: 1, content: "costam", done: false },
+  {
+    id: 1,
+    content: "ajkhfgdajksdfgajdksg f",
+    done: false,
+  },
   { id: 2, content: "askdjhda", done: true },
 ];
 

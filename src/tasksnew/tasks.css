@@ -1,0 +1,74 @@
+.zadaniaLegend {
+  font-size: 28px;
+  border: 2px;
+  background-color: hsl(0, 0%, 95%);
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+  border-radius: 5px;
+}
+
+.tasksBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.taskWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+@media (max-width: 700px) {
+  .taskWrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.zadaniaFieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 7%;
+}
+
+.zadaniaButton {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .zadaniaButton {
+    padding: 10px;
+    width: 50%;
+  }
+  .zadaniaText {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .zadaniaText {
+    order: 3;
+  }
+}

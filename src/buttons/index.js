@@ -1,6 +1,20 @@
-import "../buttons/buttons.css";
+import "./buttons.css";
 
-const Delete = ({ classes, buttonContent }) => (
-  <button className={classes}>{buttonContent}</button>
+export const Button = ({ classes, buttonContent, handleClick }) => (
+  <button onClick={handleClick} className={classes}>
+    {buttonContent}
+    {console.log(handleClick)}
+  </button>
 );
-export default Delete;
+
+// const removeTask = (index) => {
+//   tasks.splice(index, 1);
+//   render();
+// };
+
+// const removeButtons = document.querySelectorAll(".zadania_delete");
+// removeButtons.forEach((removeButton, taskIndex) => {
+//   removeButton.addEventListener("click", () => {
+//     removeTask(taskIndex);
+//   });
+// });
