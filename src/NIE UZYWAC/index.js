@@ -1,4 +1,5 @@
 import "./tasks.css";
+import { useState } from "react";
 import { Button } from "../buttons/index.js";
 import { Fragment } from "react";
 
@@ -7,6 +8,11 @@ const Tasks = ({ tasks }) => {
     const index = tasks.findIndex((task) => task.id === id);
     tasks.splice(index, 1);
     console.log(index, tasks);
+  };
+
+  const [hideDone, setHideDone] = useState(false);
+  const toggleHideDone = () => {
+    setHideDone((hideDone) => !hideDone);
   };
 
   return (
@@ -35,6 +41,11 @@ const Tasks = ({ tasks }) => {
                 />
               </li>
             </label>
+            <Button
+              classes="zadania_delete"
+              buttonContent="Ukryj"
+              handleClick={() => hideDone(toggleHideDone)}
+            />
           </Fragment>
         ))}
       </ul>

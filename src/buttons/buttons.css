@@ -24,3 +24,31 @@
   background-color: rgb(173, 46, 46);
   transform: scale(1.07);
 }
+.zadaniaToggleHide {
+  color: hsl(0, 0%, 95%);
+  background-color: teal;
+  width: 49.5%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.2s;
+}
+.zadaniaToggleHide:hover {
+  transform: scale(1.03);
+}
+.zadaniaDoneAll {
+  color: hsl(0, 0%, 95%);
+  background-color: teal;
+  width: 49.5%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.2s;
+}
+.zadaniaDoneAll:hover {
+  transform: scale(1.03);
+}
+.zadaniaMainButtons {
+  display: flex;
+  justify-content: space-between;
+}
